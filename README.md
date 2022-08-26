@@ -14,7 +14,7 @@
 ## Description
 
 Hello! This is my first web project on my journey of learning Java. The goal was a simple web application that supports
-basic authentication, registration, logout and CRUD operations. It's certainly not for business use, so be lenient.
+basic authentication, registration, login/logout and CRUD operations.
 
 ## Features
 
@@ -82,18 +82,13 @@ database.
 
 ### Set up connection to database
 
-Change the database details to yours in class [ConnectionUtil](src/main/java/taxi/util/ConnectionUtil.java).<br>
+Change the database connection data to yours in [dbConfig.properties](src/main/resources/dbConfig.properties) file.<br>
 Example:
 
-```java
-public class ConnectionUtil {
-    private static final String URL = "jdbc:mysql://localhost:3306/taxi_service";
-    private static final String USERNAME = "root";
-    private static final String PASSWORD = "12345678";
-    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-    // rest of code
-}
-```
+    db.url=jdbc:mysql://localhost:3306/taxi_service
+    db.username=root
+    db.password=12345678
+    jdbc.driver=com.mysql.cj.jdbc.Driver
 
 #### DB connection error:
 
