@@ -9,9 +9,9 @@ import java.util.Properties;
 public class ConnectionUtil {
     public static Connection getConnection() {
         try (var input = ConnectionUtil.class.getClassLoader()
-                .getResourceAsStream("dbConfig.properties")) {
+                .getResourceAsStream("application.properties")) {
             if (input == null) {
-                throw new RuntimeException("Can't find dbConfig.properties");
+                throw new RuntimeException("Can't find application.properties");
             }
             Properties dbProperties = new Properties();
             dbProperties.load(input);
@@ -21,7 +21,7 @@ public class ConnectionUtil {
                     dbProperties.getProperty("db.username"),
                     dbProperties.getProperty("db.password"));
         } catch (IOException e) {
-            throw new RuntimeException("Can't read dbConfig.properties", e);
+            throw new RuntimeException("Can't read application.properties", e);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("Can't find SQL Driver", e);
         } catch (SQLException e) {

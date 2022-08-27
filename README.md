@@ -82,7 +82,7 @@ database.
 
 ### Set up connection to database
 
-Change the database connection data to yours in [dbConfig.properties](src/main/resources/dbConfig.properties) file.<br>
+Change the database connection data to yours in [application.properties](src/main/resources/application.properties) file.<br>
 Example:
 
     db.url=jdbc:mysql://localhost:3306/taxi_service
