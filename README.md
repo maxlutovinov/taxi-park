@@ -1,4 +1,4 @@
-# Taxi Service
+# Taxi Park
 
 <!-- TOC -->
 
@@ -42,14 +42,14 @@ Dao and Service layers:
 
 ## Deployed application
 
-The web application is available on [Heroku](https://www.heroku.com/about) here:
+The web application is available on [AWS](https://aws.amazon.com) here:
 
-[https://fathomless-oasis-taxi.herokuapp.com](https://fathomless-oasis-taxi.herokuapp.com)
+[app-env.eba-rphdrhap.eu-north-1.elasticbeanstalk.com](http://app-env.eba-rphdrhap.eu-north-1.elasticbeanstalk.com)
 
 Simply sign up for the web app as a driver, then log in and use it. You can also clone the project locally and run the
 web application on your database locally or deploy as described in the [Usage](#usage) section of this page.
 
-Please keep in mind that the database records you can see in my deployed application to Heroku this is your doing
+Please keep in mind that the database records you can see in my deployed application to AWS this is your doing
 :slightly_smiling_face:
 
 ## Structure
@@ -73,7 +73,7 @@ Java 11, JDBC, Java EE 8 (Servlets, Java Server Pages), SQL, Maven, Tomcat 9, He
 
 ### Clone
 
-    git clone https://github.com/maxlutovinov/taxi-service.git
+    git clone https://github.com/maxlutovinov/taxi-park.git
 
 ### Create database
 
@@ -85,7 +85,7 @@ database.
 Change the database connection data to yours in [application.properties](src/main/resources/application.properties) file.<br>
 Example:
 
-    db.url=jdbc:mysql://localhost:3306/taxi_service
+    db.url=jdbc:mysql://localhost:3306/taxi_park
     db.username=root
     db.password=12345678
     jdbc.driver=com.mysql.cj.jdbc.Driver
@@ -126,7 +126,3 @@ This will bring you to the login page of application. Then sign up, log in and u
 ### Run in IDE
 
 Download [Tomcat](https://tomcat.apache.org/download-90.cgi), configure it for the project in your IDE and run.
-
-### Deploy on Heroku cloud platform
-
-[Heroku app deployment instructions](https://devcenter.heroku.com/articles/java-webapp-runner)
