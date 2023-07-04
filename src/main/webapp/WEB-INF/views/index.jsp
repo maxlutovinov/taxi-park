@@ -4,12 +4,12 @@
 </style>
 <html>
 <head>
-    <title>Taxi Service</title>
+    <title>Taxi Park</title>
 </head>
 <body>
 <%@include file="/WEB-INF/views/header.jsp" %>
 <form method="post" id="redirect"></form>
-<h1 class="table_dark">Taxi Service</h1>
+<h1 class="table_dark">Taxi Park</h1>
 <table class="table_dark">
     <tr>
         <th>Redirect to</th>
